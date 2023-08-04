@@ -1,15 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, lazy } from 'react';
 import {useGLTF, Stage, PresentationControls} from "@react-three/drei";
-
-
 import MenuBanner from '../MenuBanner'; // Import the MenuBanner component
 import Glass_Spit_Model from './Glass_Spit_Model'; // Import the 3D Glass Spitfire component
-
-
 import './Landing_Page.css';
-
 import Spitfire_Team_Bridge_Photo from '../Photos/Spitfire_Team_Bridge_Photo.jpg'; // Photo of the Spitfire Team standing on WPI Bridge
-
 
 const Spitfire_Bridge_Width = 5800 //pixels
 const Spitfire_Bridge_Height = 3800 //pixels
@@ -23,7 +17,6 @@ function Landing_Page() {
   const viewportWidth = window.innerWidth;
   const ScalingFactor = viewportWidth/Spitfire_Bridge_Width;
   const imageheight = Spitfire_Bridge_Height * ScalingFactor;
-
 
   useEffect(() => {
     setBackgroundHeight(imageheight);

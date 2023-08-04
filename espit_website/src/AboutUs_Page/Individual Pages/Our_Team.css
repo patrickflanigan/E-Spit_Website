@@ -1,0 +1,28 @@
+.GeneralTeam {
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-y: auto;
+    /*border: 1px solid red;*/
+  }
+
+.OurTeam {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    background-repeat: no-repeat;
+    width: 100%;
+    overflow-y: auto;
+    /*border: 1px solid blue;*/
+  }
+
+.Image{
+    float:left;
+    width: 50%;
+    /*border: 1px solid green;*/
+}
+
+.Blurb{
+    float:right;
+    width: 50%;
+    /*border: 1px solid brown;*/
+}
