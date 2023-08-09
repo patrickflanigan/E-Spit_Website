@@ -16,11 +16,13 @@ function Glass_Spit_Model(){
                 colorManagement
                     shadowMap // highlight-line
                     camera={{ position: [-200, 15, 30], fov: 90 }}>
-                <directionalLight
-                    intensity={0.7}
-                    castShadow // highlight-line
-                    shadow-mapSize-height={512}
-                    shadow-mapSize-width={512}/>
+
+                {/* Ambient Light */}
+                <ambientLight intensity={0.1} color="#ffffff" />
+
+                {/* Directional Light */}
+                <directionalLight intensity={0.6} castShadow position={[10, 10, 10]} />
+
                 <OrbitControls />
                 <Suspense fallback={null}>
                     <Model/>

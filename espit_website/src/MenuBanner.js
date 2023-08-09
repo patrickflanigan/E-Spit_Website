@@ -1,5 +1,6 @@
 // MenuBanner.js
 import React from 'react';
+import './MenuBanner.css'
 import { HashRouter as Router, Route, useNavigate, Switch } from 'react-router-dom';
 
 
@@ -18,6 +19,11 @@ function MenuBanner() {
     navigate('/'); // navigate to the '/' (home) page
   }
 
+  const handlegotogallery = () => {
+    console.log('Navigating to Gallery Page!');
+    navigate('/Gallery'); // navigate to the '/' (home) page
+  }
+
 
 
 
@@ -29,8 +35,7 @@ function MenuBanner() {
         <ul>
         <li><button onClick={handlegohomeClick}>Home Page</button></li>
           <li><button onClick={handleaboutusClick}>About Our Team</button></li>
-          <li><button onClick={handlegohomeClick}>Photo Gallery</button></li>
-          <li><button onClick={handlegohomeClick}>Donate</button></li>
+          <li><button onClick={handlegotogallery}>Photo Gallery</button></li>
           {/* Add more menu items as needed */}
         </ul>
       </nav>

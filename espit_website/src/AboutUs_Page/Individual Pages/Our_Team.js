@@ -1,16 +1,25 @@
 import React from 'react';
-import './Our_Team.css';
-import Our_Team from '../../Photos/TheTeam/Full_Team.jpg'; // Photo of the whole team with the car
+import './Individual_Slides.css';
+import Full_Team from '../../Photos/TheTeam/Full_Team.jpg'; // Photo of the whole team with the car
 import { HashRouter as Router, Route, useNavigate, Switch } from 'react-router-dom';
 
 
-const blurb = "This is our team! 8 Students at WPI"
+const blurb = "This is our team!"
+const blurb2 = "Meet the eight Students at WPI who converted this convertible."
+
+function isDesktop() {
+  const width = window.innerWidth;
+  // some js way to detect if user is on a mobile device
+  if (width < 1000){
+    return false;}
+  else{
+    return true;
+    }
+  }
 
 
 
-
-
-function Landing_Page() {
+function Our_Team() {
 
     const navigate = useNavigate();
 
@@ -23,19 +32,37 @@ function Landing_Page() {
 
 
   return (
-    <div className="GeneralPage">
-    <p>
-    This is the electric spitfire team. Go ahead and scroll through these slides to learn more about each one of us!
-    </p>
-    <div className="OurTeam">
-    <img className="Image" src={Our_Team} alt="Our Team" />
-    <p className="Blurb" >{blurb}</p>
-    <button onClick={GotoBlaise}>Next: <br></br>Meet Blaise!</button>
+    <div>
+      {(isDesktop()) ? (
+    <div className="GeneralTeam">
+      <p>
+      This is the electric spitfire team. Go ahead and scroll through these slides to learn more about each one of us!
+      </p>
+      <div className="OurTeam">
+        <img className="Image" src={Full_Team} alt="Our Team" />
+        <div className='Right-Side'>
+        <p className="Blurb" >{blurb}<br></br><br></br>{blurb2}</p>
+        <button className = "Next-Button" onClick={GotoBlaise}>Next: <br></br>Meet Blaise Pingree!</button>
+        </div>
+      </div>
     </div>
+    ):(
+      <div className="GeneralTeam-mobile">
+      <p>
+      This is the electric spitfire team. Go ahead and scroll through these slides to learn more about each one of us!
+      </p>
+      <div className="OurTeam-mobile">
+      <img className="Image-mobile" src={Full_Team} alt="Our Team" />
+      <div className='Right-Side-mobile'>
+      <p className="Blurb-mobile" >{blurb}<br></br><br></br>{blurb2}</p>
+      <button className = "Next-Button-mobile" onClick={GotoBlaise}>Next: <br></br>Meet Blaise Pingree!</button>
+        </div>
+      </div>
     </div>
-    
+    )}
+    </div>
   );
 }
 
 
-export default Landing_Page;
+export default Our_Team;

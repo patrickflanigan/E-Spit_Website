@@ -25,6 +25,16 @@ const images = [
   Pat
 ];
 
+function isDesktop() {
+  const width = window.innerWidth;
+  // some js way to detect if user is on a mobile device
+  if (width < 1000){
+    return false;}
+  else{
+    return true;
+    }
+  }
+
 
 const rotateAnimationHandler = (props, state) => {
   const transitionTime = props.transitionTime + "ms";
@@ -94,6 +104,8 @@ function AboutUsCarousel() {
 
 
   return (
+    <div>
+    {(isDesktop()) ? (
     <div className="carousel-container">
             <Carousel
             showArrows={false}
@@ -139,6 +151,58 @@ function AboutUsCarousel() {
         ))}
       </Carousel>
     </div>
+
+    ):(
+
+      <div className="carousel-container-mobile">
+      <Carousel
+      showArrows={false}
+      showIndicators
+      transitionTime={310}
+      animationHandler={rotateAnimationHandler}
+      swipeable={true}
+
+      renderArrowNext={(clickHandler, hasNext) => {
+        return (
+          hasNext && (
+            <div className='custom-arrows'>
+            <button className="arrow right-arrow" onClick={clickHandler}>
+              <svg>
+                <use xlinkHref={sprite + "#right"}></use>
+              </svg>
+            </button>
+            </div>
+          )
+        );
+      }}
+      renderArrowPrev={(clickHandler, hasNext) => {
+        return (
+          hasNext && (
+            <div className='custom-arrows'>
+            <button onClick={clickHandler} className="arrow left-arrow">
+              <svg>
+                <use xlinkHref={sprite + "#left"}></use>
+              </svg>
+            </button>
+            </div>
+          )
+        );
+      }}
+
+
+
+    >
+  {images.map((URL, index) => (
+    <div className="slide" key={index} onClick={() => handleImageClick(index)}>
+      <img alt={`Slide ${index + 1}`} src={URL} />
+    </div>
+  ))}
+</Carousel>
+</div>
+
+    )}
+</div>
+
   );
 }
 

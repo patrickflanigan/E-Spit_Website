@@ -3,6 +3,8 @@ import {useGLTF, Stage, PresentationControls} from "@react-three/drei";
 import MenuBanner from '../MenuBanner'; // Import the MenuBanner component
 import Glass_Spit_Model from './Glass_Spit_Model'; // Import the 3D Glass Spitfire component
 import './Landing_Page.css';
+import ScrollButton from '../Components/ScrollButton.js';
+import { Content, Heading } from '../Components/Styles';
 import Spitfire_Team_Bridge_Photo from '../Photos/Spitfire_Team_Bridge_Photo.jpg'; // Photo of the Spitfire Team standing on WPI Bridge
 
 const Spitfire_Bridge_Width = 5800 //pixels
@@ -34,6 +36,7 @@ function Landing_Page() {
         </header>
       </div>
       <div className="Landing-page-buffer" style={{ height: `${backgroundHeight/2.25}px` }}></div>
+      <ScrollButton />
       <Glass_Spit_Model style={{ height: `${800}px` }}/>
     </div>
     
