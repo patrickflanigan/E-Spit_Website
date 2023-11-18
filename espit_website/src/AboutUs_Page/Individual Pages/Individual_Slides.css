@@ -1,0 +1,113 @@
+.GeneralTeam {
+    text-align: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    /*border: 1px solid red;*/
+  }
+
+  .Next-Button{
+    cursor: pointer;
+    width: 10%;
+  }
+
+  .Eject-Button{
+    margin-top: auto;
+    cursor: pointer;
+    width: 25%;
+  }
+
+.OurTeam {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    padding-left: 3%;
+    overflow-y: auto;
+    /*border: 1px solid blue;*/
+  }
+
+.Image{
+    float:left;
+    width: 50%;
+    /*border: 1px solid green;*/
+}
+
+.Right-Side{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  /*border: 1px solid rgb(15, 166, 177);*/
+}
+
+.Blurb{
+  padding-top: 15%;
+  padding-bottom: 5%;
+    float:right;
+    width: 50%;
+    /*border: 1px solid brown;*/
+}
+
+
+
+
+
+
+.GeneralTeam-mobile {
+  text-align: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  /*border: 1px solid red;*/
+}
+
+.Next-Button-mobile{
+  cursor: pointer;
+  width: 70%;
+}
+
+.Eject-Button-mobile{
+  margin-top: 7%;
+  cursor: pointer;
+  width: 75%;
+}
+
+.OurTeam-mobile {
+  display: flex;
+  flex-flow: column;
+  align-items: center; /* Vertically center the content */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 85vh;
+  overflow-y: auto;
+  /*border: 1px solid blue;*/
+}
+
+.Image-mobile{
+  padding-top: 5%;
+  justify-content: center;
+  width: 100%;
+  /*border: 1px solid green;*/
+}
+
+.Right-Side-mobile{
+display: flex;
+flex-flow: column;
+align-items: center;
+width: 50%;
+height: 100%;
+/*border: 1px solid rgb(15, 166, 177);*/
+}
+
+.Blurb-mobile{
+padding-top: 15%;
+padding-bottom: 5%;
+  float:right;
+  width: 100%;
+  /*border: 1px solid brown;*/
+}

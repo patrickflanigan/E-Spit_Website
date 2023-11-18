@@ -1,0 +1,34 @@
+.menu-banner {
+    background-color: #b6b6b6;
+    padding: 10px;
+  }
+  
+  nav ul {
+    padding: 10x;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+
+  /* Style the buttons */
+nav li button {
+    border: none;
+    background-color: #145ead00;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  nav li button:hover {
+    color: #a73e24;
+  }

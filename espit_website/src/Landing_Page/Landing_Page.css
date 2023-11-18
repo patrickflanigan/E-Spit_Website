@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.App-header {
+  /*min-height: 100vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.Landing-page-buffer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+.Landing-page-buffer-2 {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(255, 255, 255);
+}
+
+.Landing-page-buffer-mobile {
+  height: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: black;
+}
+
+.video-container {
+  width: 100%;
+}
+
+.machining-container{
+  width: 80%;
+}
+
+.drivetrain-cad-container {
+  width: 80%;
+}
+  
+.spitfire-dashcam-container{
+  width: 70%;
+}
+
+.dashboard-cad-container {
+  width: 80%;
+}
+.dashboard-real-container {
+  width: 80%;
+}
+
+.dashboard-container {
+  width: 70%;
+}
