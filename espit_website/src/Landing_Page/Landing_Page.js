@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect, useRef, useState } from 'react';
 import MenuBanner from '../MenuBanner'; // Import the MenuBanner component
 
@@ -24,6 +25,19 @@ import SpitfireLeavingSprungers from "../Photos/Landing_Page/First_Drive.mp4";
 const Spitfire_Bridge_Width = 5800 //pixels
 const Spitfire_Bridge_Height = 3800 //pixels
 const Glass_Spit_Model = React.lazy(() => import('./Glass_Spit_Model_Page')); // attempt to 'lazy load' the integrated CAD file to prevent lag on page load.
+=======
+import React, { useEffect, useRef, useState, lazy } from 'react';
+import {useGLTF, Stage, PresentationControls} from "@react-three/drei";
+import MenuBanner from '../MenuBanner'; // Import the MenuBanner component
+import Glass_Spit_Model from './Glass_Spit_Model'; // Import the 3D Glass Spitfire component
+import './Landing_Page.css';
+import ScrollButton from '../Components/ScrollButton.js';
+import { Content, Heading } from '../Components/Styles';
+import Spitfire_Team_Bridge_Photo from '../Photos/Spitfire_Team_Bridge_Photo.jpg'; // Photo of the Spitfire Team standing on WPI Bridge
+
+const Spitfire_Bridge_Width = 5800 //pixels
+const Spitfire_Bridge_Height = 3800 //pixels
+>>>>>>> origin/main
 
 
 function Landing_Page() {
@@ -31,14 +45,20 @@ function Landing_Page() {
   const appRef = useRef(null);
   const [backgroundHeight, setBackgroundHeight] = useState(0);
 
+<<<<<<< HEAD
   // The two lines below scale the bridge photo to correct proportions for varying screen sizes
   const ScalingFactor = window.innerWidth/Spitfire_Bridge_Width;
+=======
+  const viewportWidth = window.innerWidth;
+  const ScalingFactor = viewportWidth/Spitfire_Bridge_Width;
+>>>>>>> origin/main
   const imageheight = Spitfire_Bridge_Height * ScalingFactor;
 
   useEffect(() => {
     setBackgroundHeight(imageheight);
   }, []);
 
+<<<<<<< HEAD
 
 
   return (
@@ -132,6 +152,10 @@ function Landing_Page() {
 
     ):(   // If viewer is on mobile, the program will return the below lines:
       
+=======
+  return (
+
+>>>>>>> origin/main
     <div className="App">
       <MenuBanner />
       <div className="App" style={{ backgroundImage: `url(${Spitfire_Team_Bridge_Photo})`, height: `${backgroundHeight}px` }}>
@@ -141,6 +165,7 @@ function Landing_Page() {
           </p>
         </header>
       </div>
+<<<<<<< HEAD
       <div className="Landing-page-buffer-mobile
       " style={{ height: `${backgroundHeight/1}px` }}></div>
       {/* <ScrollUpButton />
@@ -150,6 +175,13 @@ function Landing_Page() {
     </div>
     )}
     </div>   
+=======
+      <div className="Landing-page-buffer" style={{ height: `${backgroundHeight/2.25}px` }}></div>
+      <ScrollButton />
+      <Glass_Spit_Model style={{ height: `${800}px` }}/>
+    </div>
+    
+>>>>>>> origin/main
   );
 }
 

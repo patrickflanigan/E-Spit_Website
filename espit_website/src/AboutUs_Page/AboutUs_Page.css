@@ -5,11 +5,19 @@
     align-items: center;
     justify-content: center;
     color: white;
+<<<<<<< HEAD
     background-color: rgb(23, 94, 217);
   }
 
   .White-Buffer{
     height: 100px;
+=======
+    background-color: rgb(89, 72, 199);
+  }
+
+  .White-Buffer{
+    height: 50px;
+>>>>>>> origin/main
   }
 
   .Carousel-flex-container {
@@ -22,7 +30,10 @@
     background-color: white;
   }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/main
   /* ----------------------------------------- Mobile Configurations Below --------------------------------------- */
 
   .AboutUs-page-buffer-mobile {
@@ -44,7 +55,11 @@
   }
 
   .White-Buffer-mobile {
+<<<<<<< HEAD
     height: 500px;
+=======
+    height: 300px;
+>>>>>>> origin/main
   }
 
   .Carousel-flex-container-mobile {
