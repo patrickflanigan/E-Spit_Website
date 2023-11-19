@@ -1,28 +1,3 @@
-{
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-<<<<<<< HEAD
-=======
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
->>>>>>> origin/main
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:a87002ae4f0f3a630308e2890b94c36ae4b8b63c6197ac927e489d55b20d15a4
+size 561
