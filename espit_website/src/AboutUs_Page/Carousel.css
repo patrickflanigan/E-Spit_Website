@@ -3,11 +3,7 @@
 
     height: 100vh;
     width: 60vw;
-<<<<<<< HEAD
     /*border: 1px solid blue;*/
-=======
-    border: 1px solid blue;
->>>>>>> origin/main
     /*max-width: 800px; /* Adjust as needed */
   }
   
@@ -48,10 +44,6 @@
 
   .carousel-container-mobile {
     position: relative;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/main
     height: 100vh;
     width: 100vw;
     /*max-width: 800px; /* Adjust as needed */

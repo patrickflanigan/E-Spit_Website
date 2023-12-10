@@ -26,7 +26,6 @@
   background-color: black;
 }
 
-<<<<<<< HEAD
 .Landing-page-buffer-2 {
   height: 500px;
   display: flex;
@@ -73,13 +72,3 @@
 .dashboard-container {
   width: 70%;
 }
-=======
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
->>>>>>> origin/main

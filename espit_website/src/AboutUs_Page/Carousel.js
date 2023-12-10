@@ -98,7 +98,6 @@ function AboutUsCarousel() {
     if(index ==0){
       navigate('/Our_Team_Page')
     }
-<<<<<<< HEAD
     else if(index ==1){
       navigate('/AboutBlaise')
     }
@@ -120,8 +119,6 @@ function AboutUsCarousel() {
     else if(index ==7){
       navigate('/AboutPat')
     }
-=======
->>>>>>> origin/main
 
 
   };

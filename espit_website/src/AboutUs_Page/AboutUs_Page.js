@@ -28,7 +28,6 @@ function AboutUs() {
     <div>
     <MenuBanner />
     <div className="AboutUs-page-buffer"><h1>Our Mission</h1><text>{OUR_MISSIONp1}</text><text>{OUR_MISSIONp2}</text></div>
-<<<<<<< HEAD
     <div className='White-Buffer'>
       <br></br>
       <br></br>
@@ -36,9 +35,6 @@ function AboutUs() {
         Click the slideshow below to learn about the members of our team!
       </text>
     </div>
-=======
-    <div className='White-Buffer'></div>
->>>>>>> origin/main
     <div className='Carousel-flex-container'><AboutUsCarousel /></div>
     </div>
       ):(
